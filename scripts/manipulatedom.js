@@ -2,7 +2,7 @@ window.onload = function() {
   document.getElementById('addTableBtn').addEventListener('click', addTable);
 }
 
-function createTRNode(colNodes) {
+function createTRNode(colNodes) { // colNodes is array of TDNode
   let trNode = document.createElement("tr");
   colNodes.forEach(function(colNode) {
     trNode.appendChild(colNode);
