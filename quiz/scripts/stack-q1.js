@@ -4,16 +4,19 @@ class PStack {
     this.#id = 1;
     this._persons = [];
   }
-
-  showId() {
-    return this.#id;
-  }
-
 }
 
 class PStackImpl extends PStack {
   constructor() {
     super();
+  }
+
+  get persons() {
+    return this._persons;
+  }
+
+  set persons(persons) {
+    this._persons = persons;
   }
 
   push(p) {
